@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Peddana&display=swap');
 
+
+
 body {
     color: #000010;
     font-family: Peddana, Verdana, sans-serif;
     font-size: 20px;
-    margin: 20px;
+    margin: 0px;
     background-color: #f5f1e8;
 }
 
@@ -15,15 +17,24 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     background-color: #d3a625;
-    padding: 10px;
     position: sticky;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    justify-content: center;
     align-items: center;
+    padding: 0px 40px;
+    gap: 110px;
+
 }
 
 .logo {
     grid-column: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    gap: 10px;
 }
 
 nav {
@@ -34,12 +45,16 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
 }
 
 nav li {
     display: inline-block;
-    margin-right: 20px;
-    padding: 10px;
+    padding: 0px 20px;
 }
 
 nav a {
@@ -49,8 +64,11 @@ nav a {
 }
 
 nav a:hover {
-    color: #6c473f;
-    text-decoration: overline #6c473f;
+    text-shadow: 4px 4px 8px #0E0E35;
+}
+
+.selected {
+    text-shadow: 4px 4px 8px #0E0E35;
 }
 
 main {
