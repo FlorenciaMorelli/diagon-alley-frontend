@@ -89,3 +89,43 @@ p {
     font-size: 24px;
     line-height: 1.5;
 }
+
+/* Carrusel */
+
+.carrusel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 150px;
+    gap: 20px;
+    width: max-content;
+    overflow: hidden;
+}
+
+.botonCarrusel {
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.card {
+    width: 270px;
+    height: 323px;
+    background-color: #DBD5BD;
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;   
+}
+
+.imgcard {
+    height: 200px;
+    width: 237px;
+    overflow: hidden;
+    border-radius: 16px;
+    justify-content: center;
+}
