@@ -204,3 +204,40 @@ footer {
     border-radius: 2%;
     border: solid 2px #d3a625;
 }
+
+
+
+/* formularios.html - BOOTSTRAP*/
+label, input, button {
+  color: #000010;
+}
+
+.form-control {
+  background-color: #DBD5BD;
+  border-radius: 10px;
+}
+
+.btn-custom {
+  background-color: #D3A625;
+  border-color: #D3A625;
+  border-radius: 10px;
+  color: #fff;
+}
+
+
+/* login.html - IFRAME */
+.iframe-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%; /* Proporción de aspecto para ajustar el tamaño del iframe */
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
