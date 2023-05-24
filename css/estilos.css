@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Peddana&display=swap');
 
-
-
 body {
     color: #000010;
     font-family: Peddana, Verdana, sans-serif;
@@ -55,6 +53,7 @@ nav ul {
 nav li {
     display: inline-block;
     padding: 0px 20px;
+    line-height: 0.75;
 }
 
 nav a {
@@ -90,42 +89,117 @@ p {
     line-height: 1.5;
 }
 
-/* Carrusel */
-
-.carrusel {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 20px;
-    gap: 20px;
-    width: max-content;
-    overflow: hidden;
+footer {
+    margin: 0 20px;
 }
 
-.botonCarrusel {
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+
+
+/* Carrusel */
+.carrusel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+/* Estilos del carrusel */
+.carrusel-contenedor {
+    display: flex;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
 }
 
 .card {
-    width: 270px;
-    height: 323px;
+    flex: 0 0 240px;
+    margin-right: 20px;
+    text-align: center;
     background-color: #DBD5BD;
-    border-radius: 16px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;   
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
 }
 
 .imgcard {
-    height: 200px;
-    width: 237px;
-    overflow: hidden;
-    border-radius: 16px;
-    justify-content: center;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carrusel-boton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #DBD5BD;
+    border: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carrusel-boton:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carrusel-boton.carrusel-anterior {
+    left: 10px;
+}
+
+.carrusel-boton.carrusel-siguiente {
+    right: 10px;
+}
+
+
+
+/* index.html */
+.bienvenido {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.bienvenidoTexto{
+    grid-column: 1;
+    margin-right: 70px;
+}
+
+.bienvenidoImagen {
+    grid-column: 2;
+    position: relative;
+    padding: 20xp;
+  
+  
+  /* Superposición de imágenes. No queda 10 puntos, hay que rever*/
+/* .vertical img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.vertical {
+    width: 364px;
+    height: auto;
+    border-radius: 2%;
+    border: solid 2px #d3a625;
+}
+
+.horizontal {
+    width: 364px;
+    height: auto;
+    position: absolute;
+    top: 60%;
+    right: 30%;
+    transform: translate(0%, -30%);
+    z-index: 1;
+    border-radius: 2%;
+    border: solid 2px #d3a625;
+} */
+
+.horizontal {
+    width: 364px;
+    height: auto;
+    border-radius: 2%;
+    border: solid 2px #d3a625;
 }
