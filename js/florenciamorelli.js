@@ -37,3 +37,15 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+
+// MODIFICACIÓN DEL HEADER AL SCROLLEAR - no funcionó bien
+/* window.addEventListener('scroll', function() {
+    var header = document.getElementById("myHeader");
+    if (window.pageYOffset > 80) {
+      header.classList.add("shrink");
+    } else {
+      header.classList.remove("shrink");
+    }
+  });
+   */
