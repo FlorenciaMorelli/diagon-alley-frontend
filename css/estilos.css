@@ -95,41 +95,6 @@ footer {
 
 
 
-/* Superposición de imágenes. No queda 10 puntos, hay que rever*/
-/* .vertical img {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.vertical {
-    width: 364px;
-    height: auto;
-    border-radius: 2%;
-    border: solid 2px #d3a625;
-}
-
-.horizontal {
-    width: 364px;
-    height: auto;
-    position: absolute;
-    top: 60%;
-    right: 30%;
-    transform: translate(0%, -30%);
-    z-index: 1;
-    border-radius: 2%;
-    border: solid 2px #d3a625;
-} */
-
-.horizontal {
-    width: 364px;
-    height: auto;
-    border-radius: 2%;
-    border: solid 2px #d3a625;
-}
-
-
-
 /* Carrusel */
 .carrusel {
     position: relative;
@@ -204,4 +169,37 @@ footer {
     grid-column: 2;
     position: relative;
     padding: 20xp;
+  
+  
+  /* Superposición de imágenes. No queda 10 puntos, hay que rever*/
+/* .vertical img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.vertical {
+    width: 364px;
+    height: auto;
+    border-radius: 2%;
+    border: solid 2px #d3a625;
+}
+
+.horizontal {
+    width: 364px;
+    height: auto;
+    position: absolute;
+    top: 60%;
+    right: 30%;
+    transform: translate(0%, -30%);
+    z-index: 1;
+    border-radius: 2%;
+    border: solid 2px #d3a625;
+} */
+
+.horizontal {
+    width: 364px;
+    height: auto;
+    border-radius: 2%;
+    border: solid 2px #d3a625;
 }
