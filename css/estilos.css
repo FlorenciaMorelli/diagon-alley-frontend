@@ -209,35 +209,35 @@ footer {
 
 /* formularios.html - BOOTSTRAP*/
 label, input, button {
-  color: #000010;
+    color: #000010;
 }
 
 .form-control {
-  background-color: #DBD5BD;
-  border-radius: 10px;
+    background-color: #f5f1e8;
+    border-radius: 10px;
 }
 
 .btn-custom {
-  background-color: #D3A625;
-  border-color: #D3A625;
-  border-radius: 10px;
-  color: #fff;
+    background-color: transparent;
+    border-color: #D3A625;
+    border-radius: 10px;
+    color: #000010;
 }
 
 
 /* login.html - IFRAME */
 .iframe-container {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 75%; /* Proporción de aspecto para ajustar el tamaño del iframe */
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%; /* Proporción de aspecto para ajustar el tamaño del iframe */
 }
 
 .iframe-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }

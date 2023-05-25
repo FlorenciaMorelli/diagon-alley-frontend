@@ -1,74 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <title>Login</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">  
 </head>
 <body>
     <div class="row">
-      <div class="col-md-6">
-        <h2>Login</h2>
-        <form>
-          <div class="form-group">
-            <label for="login-email">Correo electronico</label>
-            <input type="email" class="form-control" id="login-email" placeholder="Ingrese su correo electronico">
-          </div>
-          <div class="form-group">
-            <label for="login-password">Clave</label>
-            <input type="password" class="form-control" id="login-password" placeholder="Ingrese su clave">
-          </div>
-          <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="remember-me">
-            <label class="form-check-label" for="remember-me">Recordarme</label>
-          </div>
-          <button type="submit" class="btn btn-custom">Iniciar sesion</button>
-        </form>
-      </div>
-      <div class="col-md-6">
-        <h2>Registro</h2>
-        <form>
-          <div class="form-group">
-            <label for="register-firstname">Nombres</label>
-            <input type="text" class="form-control" id="register-firstname" placeholder="Ingrese sus nombres">
-          </div>
-          <div class="form-group">
-            <label for="register-lastname">Apellidos</label>
-            <input type="text" class="form-control" id="register-lastname" placeholder="Ingrese sus apellidos">
-          </div>
-          <div class="form-group">
-            <label for="register-dni">DNI</label>
-            <input type="text" class="form-control" id="register-dni" placeholder="Ingrese su DNI">
-          </div>
-          <div class="form-group">
-            <label for="register-dob">Fecha de nacimiento</label>
-            <input type="date" class="form-control" id="register-dob">
-          </div>
-          <div class="form-group">
-            <label for="register-email">Correo electronico</label>
-            <input type="email" class="form-control" id="register-email" placeholder="Ingrese su correo electronico">
-          </div>
-          <div class="form-group">
-            <label for="register-confirm-email">Confirmar correo electronico</label>
-            <input type="email" class="form-control" id="register-confirm-email" placeholder="Confirme su correo electronico">
-          </div>
-          <div class="form-group">
-            <label for="register-password">Clave</label>
-            <input type="password" class="form-control" id="register-password" placeholder="Ingrese su clave">
-          </div>
-          <div class="form-group">
-            <label for="register-confirm-password">Confirmar clave</label>
-            <input type="password" class="form-control" id="register-confirm-password" placeholder="Confirme su clave">
-          </div>
-          <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="accept-terms">
-            <label class="form-check-label" for="accept-terms">Acepto los terminos y condiciones</label>
-          </div>
-          <button type="submit" class="btn btn-custom">Registrar</button>
-        </form>
+        <div class="col-md-6">
+            <h2>Login</h2>
+            <form>
+            <div class="form-group">
+                <label for="login-email">Correo electronico</label>
+                <input type="email" class="form-control" id="login-email" placeholder="Ingrese su correo electronico">
+            </div>
+            <div class="form-group">
+                <label for="login-password">Clave</label>
+                <input type="password" class="form-control" id="login-password" placeholder="Ingrese su clave">
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="remember-me">
+                <label class="form-check-label" for="remember-me">Recordarme</label>
+            </div>
+            <button type="submit" class="btn-custom">Iniciar sesion</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <h2>Registro</h2>
+            <form>
+            <div class="form-group">
+                <label for="register-firstname">Nombres</label>
+                <input type="text" class="form-control" id="register-firstname" placeholder="Ingrese sus nombres">
+            </div>
+            <div class="form-group">
+                <label for="register-lastname">Apellidos</label>
+                <input type="text" class="form-control" id="register-lastname" placeholder="Ingrese sus apellidos">
+            </div>
+            <div class="form-group">
+                <label for="register-dni">DNI</label>
+                <input type="text" class="form-control" id="register-dni" placeholder="Ingrese su DNI">
+            </div>
+            <div class="form-group">
+                <label for="register-dob">Fecha de nacimiento</label>
+                <input type="date" class="form-control" id="register-dob">
+            </div>
+            <div class="form-group">
+                <label for="register-email">Correo electronico</label>
+                <input type="email" class="form-control" id="register-email" placeholder="Ingrese su correo electronico">
+            </div>
+            <div class="form-group">
+                <label for="register-confirm-email">Confirmar correo electronico</label>
+                <input type="email" class="form-control" id="register-confirm-email" placeholder="Confirme su correo electronico">
+            </div>
+            <div class="form-group">
+                <label for="register-password">Clave</label>
+                <input type="password" class="form-control" id="register-password" placeholder="Ingrese su clave">
+            </div>
+            <div class="form-group">
+                <label for="register-confirm-password">Confirmar clave</label>
+                <input type="password" class="form-control" id="register-confirm-password" placeholder="Confirme su clave">
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="accept-terms">
+                <label class="form-check-label" for="accept-terms">Acepto los terminos y condiciones</label>
+            </div>
+            <button type="submit" class="btn-custom">Registrar</button>
+            </form>
+        </div>
     </div>
-</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        // Escucha el evento submit del formulario
+        $('form').on('submit', function(event) {
+            event.preventDefault(); // Evita el envío del formulario por defecto
+
+            // Obtiene los valores del formulario
+            var email = $('#login-email').val();
+            var password = $('#login-password').val();
+
+            // Realiza la verificación de los campos
+            if (email.trim() === '' || password.trim() === '') {
+            alert('Por favor, completa todos los campos.');
+            } else {
+            // Crea el objeto de datos a enviar
+            var data = {
+                email: email,
+                password: password
+            };
+
+            // Realiza la llamada a la API REST para enviar los datos
+            $.ajax({
+                url: 'https://jsonplaceholder.typicode.com/posts', // URL corregida
+                method: 'POST',
+                data: JSON.stringify(data),
+                contentType: 'application/json',
+                success: function(response) {
+                // Maneja la respuesta exitosa de la API
+                alert('Inicio de sesión exitoso');
+                // Aquí puedes redirigir al usuario a otra página, mostrar un mensaje, etc.
+                },
+                error: function(error) {
+                // Maneja el error de la llamada a la API
+                alert('Error en el inicio de sesión');
+                console.log(error);
+                }
+            });
+            }
+        });
+        });
+    </script>
 </body>
 </html>
