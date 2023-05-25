@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Peddana&display=swap');
 
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
 body {
     color: #000010;
     font-family: Peddana, Verdana, sans-serif;
@@ -229,31 +231,11 @@ footer {
     position: absolute;
     right: 10px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-30%);
     font-size: 20px;
     cursor: pointer;
 }
 
 .placeholder {
     font-family: Peddana, Verdana, sans-serif;
-}
-
-/* Estilo del ícono de lupa */
-.search-icon:before {
-    content: "\1F50D";
-}
-
-/* Estilo del ícono de lupa en caso de que el sistema no lo reconozca */
-@font-face {
-    font-family: "Emoji";
-    src: url("https://cdnjs.cloudflare.com/ajax/libs/twemoji/13.1.0/2/svg/1f50d.svg") format("svg");
-}
-
-.search-icon:before {
-    font-family: "Emoji";
-}
-
-/* Estilo del ícono de lupa en caso de que el sistema no lo reconozca y no se pueda acceder a Internet */
-.no-font-emoji .search-icon:before {
-    content: "🔍";
 }
