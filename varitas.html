@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,37 +7,248 @@
     
     <link rel="stylesheet" href="./css/estilos.css">
 
-
     <title>Varitas en Diagon Alley</title>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="logo1.png" alt="Logo" class="imglogo" width="300px">
+            <a href="/">
+                <img src="logo1.png" alt="Logo" class="imglogo" width="300px">
+            </a>
         </div>
         <nav>
             <ul>
                 <li><a href="/">Inicio</a></li>
-                <li><a href="./varitas.html">Varitas</a></li>
+                <li class="selected"><a href="./varitas.html">Varitas</a></li>
                 <li><a href="./escobas.html">Escobas</a></li>
                 <li><a href="./login.html">Iniciar sesion</a></li>
+                <li><a href="./carrito.html"><i class="fi fi-rr-shopping-cart"></i></a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Varitas</h1>
-        <!-- imagen de escobas -->
-        <h2>Las más compradas</h2>
-        <!-- carrusel -->
-        <h2>Las más raras</h2>
-        <!-- carrusel -->
-        <h2>Sauco</h2>
-        <!-- carrusel -->
-        <h2>Cedro</h2>
-        <!-- carrusel -->
+        <div>
+            <h2>Las más compradas</h2>
+            <div class="carrusel">
+                <div class="botonCarrusel">
+                    <button class="carrusel-boton carrusel-anterior"><i class="fi fi-rs-angle-left"></i></button>
+                </div>
+                <div class="carrusel-contenedor">
+                    <div class="card">
+                        <img src="./img/varita1.jpg" alt="Varita 1" class="imgcard">
+                        <h3>Varita de Sauco</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita2.jpg" alt="Varita 2" class="imgcard">
+                        <h3>Varita Nogon</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita3.jpg" alt="Varita 3" class="imgcard">
+                        <h3>Varita Endrino</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita4.jpg" alt="Varita 4" class="imgcard">
+                        <h3>Varita Friggory</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita5.jpg" alt="Varita 5" class="imgcard">
+                        <h3>Varita Alenix</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita1.jpg" alt="Varita 1" class="imgcard">
+                        <h3>Varita de Sauco</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita2.jpg" alt="Varita 2" class="imgcard">
+                        <h3>Varita Nogon</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita3.jpg" alt="Varita 3" class="imgcard">
+                        <h3>Varita Endrino</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita4.jpg" alt="Varita 4" class="imgcard">
+                        <h3>Varita Friggory</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita5.jpg" alt="Varita 5" class="imgcard">
+                        <h3>Varita Alenix</h3>
+                    </div>
+                </div>
+                <div class="botonCarrusel">
+                    <button class="carrusel-boton carrusel-siguiente"><i class="fi fi-rs-angle-right"></i></button>
+                </div>
+            </div>
+        </div>        
+        <br>
+        <div>
+            <h2>Las más raras</h2>
+            <div class="carrusel">
+                <div class="botonCarrusel">
+                    <button class="carrusel-boton carrusel-anterior"><i class="fi fi-rs-angle-left"></i></button>
+                </div>
+                <div class="carrusel-contenedor">
+                    <div class="card">
+                        <img src="./img/varita5.jpg" alt="Varita 5" class="imgcard">
+                        <h3>Varita Alenix</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita4.jpg" alt="Varita 4" class="imgcard">
+                        <h3>Varita Friggory</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita3.jpg" alt="Varita 3" class="imgcard">
+                        <h3>Varita Endrino</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita2.jpg" alt="Varita 2" class="imgcard">
+                        <h3>Varita Nogon</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita1.jpg" alt="Varita 1" class="imgcard">
+                        <h3>Varita de Sauco</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita5.jpg" alt="Varita 5" class="imgcard">
+                        <h3>Varita Alenix</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita4.jpg" alt="Varita 4" class="imgcard">
+                        <h3>Varita Friggory</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita3.jpg" alt="Varita 3" class="imgcard">
+                        <h3>Varita Endrino</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita2.jpg" alt="Varita 2" class="imgcard">
+                        <h3>Varita Nogon</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita1.jpg" alt="Varita 1" class="imgcard">
+                        <h3>Varita de Sauco</h3>
+                    </div>
+                </div>
+                <div class="botonCarrusel">
+                    <button class="carrusel-boton carrusel-siguiente"><i class="fi fi-rs-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div>
+            <h2>Sauco</h2>
+            <div class="carrusel">
+                <div class="botonCarrusel">
+                    <button class="carrusel-boton carrusel-anterior"><i class="fi fi-rs-angle-left"></i></button>
+                </div>
+                <div class="carrusel-contenedor">
+                    <div class="card">
+                        <img src="./img/varita3.jpg" alt="Varita 3" class="imgcard">
+                        <h3>Varita Endrino</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita5.jpg" alt="Varita 5" class="imgcard">
+                        <h3>Varita Alenix</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita2.jpg" alt="Varita 2" class="imgcard">
+                        <h3>Varita Nogon</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita4.jpg" alt="Varita 4" class="imgcard">
+                        <h3>Varita Friggory</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita1.jpg" alt="Varita 1" class="imgcard">
+                        <h3>Varita de Sauco</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita4.jpg" alt="Varita 4" class="imgcard">
+                        <h3>Varita Friggory</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita2.jpg" alt="Varita 2" class="imgcard">
+                        <h3>Varita Nogon</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita5.jpg" alt="Varita 5" class="imgcard">
+                        <h3>Varita Alenix</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita1.jpg" alt="Varita 1" class="imgcard">
+                        <h3>Varita de Sauco</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita3.jpg" alt="Varita 3" class="imgcard">
+                        <h3>Varita Endrino</h3>
+                    </div>
+                </div>
+                <div class="botonCarrusel">
+                    <button class="carrusel-boton carrusel-siguiente"><i class="fi fi-rs-angle-right"></i></button>
+                </div>
+            </div>
+        </div>        
+        <br>
+        <div>
+            <h2>Cedro</h2>
+            <div class="carrusel">
+                <div class="botonCarrusel">
+                    <button class="carrusel-boton carrusel-anterior"><i class="fi fi-rs-angle-left"></i></button>
+                </div>
+                <div class="carrusel-contenedor">
+                    <div class="card">
+                        <img src="./img/varita2.jpg" alt="Varita 2" class="imgcard">
+                        <h3>Varita Nogon</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita4.jpg" alt="Varita 4" class="imgcard">
+                        <h3>Varita Friggory</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita5.jpg" alt="Varita 5" class="imgcard">
+                        <h3>Varita Alenix</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita3.jpg" alt="Varita 3" class="imgcard">
+                        <h3>Varita Endrino</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita1.jpg" alt="Varita 1" class="imgcard">
+                        <h3>Varita de Sauco</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita3.jpg" alt="Varita 3" class="imgcard">
+                        <h3>Varita Endrino</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita5.jpg" alt="Varita 5" class="imgcard">
+                        <h3>Varita Alenix</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita2.jpg" alt="Varita 2" class="imgcard">
+                        <h3>Varita Nogon</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita4.jpg" alt="Varita 4" class="imgcard">
+                        <h3>Varita Friggory</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita1.jpg" alt="Varita 1" class="imgcard">
+                        <h3>Varita de Sauco</h3>
+                    </div>
+                </div>
+                <div class="botonCarrusel">
+                    <button class="carrusel-boton carrusel-siguiente"><i class="fi fi-rs-angle-right"></i></button>
+                </div>
+            </div>
+        </div>        
+        <br>
     </main>
+
+    <script src="./js/florenciamorelli.js"></script>
+
     <footer>
-        
+        Derechos reservados © Florencia Morelli 2023
     </footer>
 </body>
 </html>

@@ -1,12 +1,16 @@
+/* Importo las fuentes desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Peddana&display=swap');
 
+/* Importo los íconos desde Flaticon */
+@import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
 @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css');
 
 body {
     color: #000010;
     font-family: Peddana, Verdana, sans-serif;
     font-size: 20px;
-    margin: 20px;
+    margin: 0px;
     background-color: #f5f1e8;
 }
 
@@ -17,15 +21,32 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     background-color: #d3a625;
-    padding: 10px;
     position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: height 0.3s ease;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    justify-content: center;
     align-items: center;
+    padding: 0px 40px;
+    gap: 110px;
 }
+
+/* Cuando scrolleamos en la página, el header se achica. No funciona muy bien, veremos para el final */
+/* header.shrink {
+  height: 50px;
+} */
+
 
 .logo {
     grid-column: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    gap: 10px;
 }
 
 nav {
@@ -36,12 +57,17 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
 }
 
 nav li {
     display: inline-block;
-    margin-right: 20px;
-    padding: 10px;
+    padding: 0px 20px;
+    line-height: 0.75;
 }
 
 nav a {
@@ -51,8 +77,11 @@ nav a {
 }
 
 nav a:hover {
-    color: #6c473f;
-    text-decoration: overline #6c473f;
+    text-shadow: 4px 4px 8px #0E0E35;
+}
+
+.selected {
+    text-shadow: 4px 4px 8px #0E0E35;
 }
 
 main {
@@ -72,4 +101,189 @@ h2 {
 p {
     font-size: 24px;
     line-height: 1.5;
+}
+
+footer {
+    margin: 0 20px;
+}
+
+
+
+/* Carrusel */
+.carrusel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+/* Estilos del carrusel */
+.carrusel-contenedor {
+    display: flex;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card {
+    flex: 0 0 240px;
+    margin-right: 20px;
+    text-align: center;
+    background-color: #DBD5BD;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.imgcard {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carrusel-boton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #DBD5BD;
+    border: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carrusel-boton:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carrusel-boton.carrusel-anterior {
+    left: 10px;
+}
+
+.carrusel-boton.carrusel-siguiente {
+    right: 10px;
+}
+
+
+
+/* index.html */
+.bienvenido {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.bienvenidoTexto{
+    grid-column: 1;
+    margin-right: 70px;
+}
+
+.bienvenidoImagen {
+    grid-column: 2;
+    position: relative;
+    padding: 20xp;
+}
+
+
+
+/* Barra de búsqueda */
+.search-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+#search-input {
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 15px;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-30%);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.placeholder {
+    font-family: Peddana, Verdana, sans-serif;
+}  
+
+  
+  /* Superposición de imágenes. No queda 10 puntos, hay que rever*/
+/* .vertical img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.vertical {
+    width: 364px;
+    height: auto;
+    border-radius: 2%;
+    border: solid 2px #d3a625;
+}
+
+.horizontal {
+    width: 364px;
+    height: auto;
+    position: absolute;
+    top: 60%;
+    right: 30%;
+    transform: translate(0%, -30%);
+    z-index: 1;
+    border-radius: 2%;
+    border: solid 2px #d3a625;
+} */
+
+.horizontal {
+    width: 364px;
+    height: auto;
+    border-radius: 2%;
+    border: solid 2px #d3a625;
+}
+
+
+
+/* formularios.html - BOOTSTRAP*/
+label, input, button {
+    color: #000010;
+}
+
+.form-control {
+    background-color: #f5f1e8;
+    border-radius: 10px;
+}
+
+.btn-custom {
+    background-color: transparent;
+    border-color: #D3A625;
+    border-radius: 10px;
+    color: #000010;
+}
+
+
+/* login.html - IFRAME */
+.iframe-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%; /* Proporción de aspecto para ajustar el tamaño del iframe */
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }

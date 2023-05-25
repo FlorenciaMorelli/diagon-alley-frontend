@@ -4,52 +4,260 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <link rel="stylesheet" href="./css/estilos.css">
+    <script src="./js/florenciamorelli.js"></script>
 
     <title>Diagon Alley</title>
 </head>
 <body>
-    <header>
+    <header id="myHeader">
         <div class="logo">
-            <img src="logo1.png" alt="Logo" class="imglogo" width="300px">
+            <a href="/">
+                <img src="logo1.png" alt="Logo" class="imglogo" width="300px">
+            </a>
         </div>
         <nav>
             <ul>
-                <li><a href="/">Inicio</a></li>
+                <li class="selected"><a href="/">Inicio</a></li>
                 <li><a href="./varitas.html">Varitas</a></li>
                 <li><a href="./escobas.html">Escobas</a></li>
                 <li><a href="./login.html">Iniciar sesion</a></li>
+                <li><a href="./carrito.html"><i class="fi fi-rr-shopping-cart"></i></a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Bienvenido al Callejon Diagon</h1>
-        <div>
-            <p>En nuestra web podras encontrar los mejores productos para tu experiencia en el Mundo Magico, nuevos y usados.
-                <br>
-            Los ultimos modelos y las mejores gangas en <b>Callejon Diagon</b>
-            </p>
+        <div class="bienvenido">
+            <div class="bienvenidoTexto">
+                <h1>Bienvenido al Callejon Diagon</h1>
+                <div>
+                    <p>En nuestra web podras encontrar los mejores productos para tu experiencia en el Mundo Magico, nuevos y usados.  Los ultimos modelos y las mejores gangas en <b>Callejon Diagon</b>
+                    </p>
+                    <div class="search-container">
+                        <input type="text" id="search-input" placeholder="Buscar en el Callejon Diagon">
+                        <span class="search-icon"><i class="fi fi-rr-search"></i></span>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="bienvenidoImagen">
+<!-- no me funcionó correctamente                 <img src="./img/flooPowderChimney.jpg" alt="Chimenea para Polvos Floo" class="vertical">
+ -->                <img src="./img/diagonAlleyEntry.jpg" alt="Entrada de ladrillo del Callejon Diagon" class="horizontal">
+            </div>
         </div>
         <div>
             <h2>Recomendados para ti</h2>
-            <!-- Carrusel con productos random -->
+            <div class="carrusel">
+                <button class="carrusel-boton carrusel-anterior"><i class="fi fi-rs-angle-left"></i></button>
+            <div class="carrusel-contenedor">
+                <div class="card">
+                    <img src="./img/escoba5.jpg" alt="Escoba 5" class="imgcard">
+                    <h3>Nimbus 2001</h3>
+                </div>
+                <div class="card">
+                    <img src="./img/varita1.jpg" alt="Varita 1" class="imgcard">
+                    <h3>Varita de Sauco</h3>
+                </div>
+                <div class="card">
+                    <img src="./img/varita3.jpg" alt="Varita 3" class="imgcard">
+                    <h3>Varita Endrino</h3>
+                </div>
+                <div class="card">
+                    <img src="./img/escoba2.jpg" alt="Escoba 2" class="imgcard">
+                    <h3>Cometa 260</h3>
+                </div>
+                <div class="card">
+                    <img src="./img/escoba3.jpg" alt="Escoba 3" class="imgcard">
+                    <h3>Nimbus 2000</h3>
+                </div>
+                <div class="card">
+                    <img src="./img/escoba5.jpg" alt="Escoba 5" class="imgcard">
+                    <h3>Nimbus 2001</h3>
+                </div>
+                <div class="card">
+                    <img src="./img/escoba3.jpg" alt="Escoba 3" class="imgcard">
+                    <h3>Nimbus 2000</h3>
+                </div>
+                <div class="card">
+                    <img src="./img/varita3.jpg" alt="Varita 3" class="imgcard">
+                    <h3>Varita Endrino</h3>
+                </div>
+                <div class="card">
+                    <img src="./img/escoba3.jpg" alt="Escoba 3" class="imgcard">
+                    <h3>Nimbus 2000</h3>
+                </div>
+            </div>
+                <button class="carrusel-boton carrusel-siguiente"><i class="fi fi-rs-angle-right"></i></button>
+            </div>
         </div>
+        <br>
         <div>
             <h2>Mejor puntuados</h2>
-            <!-- Carrusel con los mejor puntuados -->
-        </div>
+            <div class="carrusel">
+                <div class="botonCarrusel">
+                    <button class="carrusel-boton carrusel-anterior"><i class="fi fi-rs-angle-left"></i></button>
+                </div>
+                <div class="carrusel-contenedor">
+                    <div class="card">
+                        <img src="./img/varita1.jpg" alt="Varita 1" class="imgcard">
+                        <h3>Varita de Sauco</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/escoba5.jpg" alt="Escoba 5" class="imgcard">
+                        <h3>Nimbus 2001</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/escoba3.jpg" alt="Escoba 3" class="imgcard">
+                        <h3>Nimbus 2000</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/escoba1.jpg" alt="Escoba 1" class="imgcard">
+                        <h3>Barredora 5</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita5.jpg" alt="Varita 5" class="imgcard">
+                        <h3>Varita Alenix</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita1.jpg" alt="Varita 1" class="imgcard">
+                        <h3>Varita de Sauco</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/escoba5.jpg" alt="Escoba 5" class="imgcard">
+                        <h3>Nimbus 2001</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/escoba3.jpg" alt="Escoba 3" class="imgcard">
+                        <h3>Nimbus 2000</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/escoba1.jpg" alt="Escoba 1" class="imgcard">
+                        <h3>Barredora 5</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita5.jpg" alt="Varita 5" class="imgcard">
+                        <h3>Varita Alenix</h3>
+                    </div>
+                </div>
+                <div class="botonCarrusel">
+                    <button class="carrusel-boton carrusel-siguiente"><i class="fi fi-rs-angle-right"></i></button>
+                </div>
+            </div>
+        </div>        
+        <br>
         <div>
-            <h2>Lo ultimo en Varitas</h2>
-            <!-- Carrusel con los últimos agregados a varitas (numero de ID más alto)-->
-        </div>
+            <h2>Lo último en Varitas</h2>
+            <div class="carrusel">
+                <div class="botonCarrusel">
+                    <button class="carrusel-boton carrusel-anterior"><i class="fi fi-rs-angle-left"></i></button>
+                </div>
+                <div class="carrusel-contenedor">
+                    <div class="card">
+                        <img src="./img/varita1.jpg" alt="Varita 1" class="imgcard">
+                        <h3>Varita de Sauco</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita2.jpg" alt="Varita 2" class="imgcard">
+                        <h3>Varita Nogon</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita3.jpg" alt="Varita 3" class="imgcard">
+                        <h3>Varita Endrino</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita4.jpg" alt="Varita 4" class="imgcard">
+                        <h3>Varita Friggory</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita5.jpg" alt="Varita 5" class="imgcard">
+                        <h3>Varita Alenix</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita1.jpg" alt="Varita 1" class="imgcard">
+                        <h3>Varita de Sauco</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita2.jpg" alt="Varita 2" class="imgcard">
+                        <h3>Varita Nogon</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita3.jpg" alt="Varita 3" class="imgcard">
+                        <h3>Varita Endrino</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita4.jpg" alt="Varita 4" class="imgcard">
+                        <h3>Varita Friggory</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/varita5.jpg" alt="Varita 5" class="imgcard">
+                        <h3>Varita Alenix</h3>
+                    </div>
+                </div>
+                <div class="botonCarrusel">
+                    <button class="carrusel-boton carrusel-siguiente"><i class="fi fi-rs-angle-right"></i></button>
+                </div>
+            </div>
+        </div>        
+        <br>
         <div>
-            <h2>Lo ultimo en Escobas</h2>
-            <!-- Carrusel con los últimos agregados a escobas (numero de ID más alto)-->
-        </div>
+            <h2>Lo último en Escobas</h2>
+            <div class="carrusel">
+                <div class="botonCarrusel">
+                    <button class="carrusel-boton carrusel-anterior"><i class="fi fi-rs-angle-left"></i></button>
+                </div>
+                <div class="carrusel-contenedor">
+                    <div class="card">
+                        <img src="./img/escoba1.jpg" alt="Escoba 1" class="imgcard">
+                        <h3>Barredora 5</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/escoba2.jpg" alt="Escoba 2" class="imgcard">
+                        <h3>Cometa 260</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/escoba3.jpg" alt="Escoba 3" class="imgcard">
+                        <h3>Nimbus 2000</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/escoba4.jpg" alt="Escoba 4" class="imgcard">
+                        <h3>Saeta de Fuego</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/escoba5.jpg" alt="Escoba 5" class="imgcard">
+                        <h3>Nimbus 2001</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/escoba1.jpg" alt="Escoba 1" class="imgcard">
+                        <h3>Barredora 5</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/escoba2.jpg" alt="Escoba 2" class="imgcard">
+                        <h3>Cometa 260</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/escoba3.jpg" alt="Escoba 3" class="imgcard">
+                        <h3>Nimbus 2000</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/escoba4.jpg" alt="Escoba 4" class="imgcard">
+                        <h3>Saeta de Fuego</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/escoba5.jpg" alt="Escoba 5" class="imgcard">
+                        <h3>Nimbus 2001</h3>
+                    </div>
+                </div>
+                <div class="botonCarrusel">
+                    <button class="carrusel-boton carrusel-siguiente"><i class="fi fi-rs-angle-right"></i></button>
+                </div>
+            </div>
+        </div>        
     </main>
+
+    
     <footer>
-        Derechos reservados
+        Derechos reservados © Florencia Morelli 2023
     </footer>
 </body>
 </html>
