@@ -39,6 +39,8 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+
+
 // MODIFICACIÓN DEL HEADER AL SCROLLEAR - no funcionó bien
 /* window.addEventListener('scroll', function() {
     var header = document.getElementById("myHeader");
@@ -49,3 +51,17 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
    */
+
+
+
+
+// Iframe de login.html
+// Ajustar la altura del iframe al tamaño del contenido
+function adjustIframeHeight() {
+    var iframe = document.querySelector('iframe');
+    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+  }
+  
+  // Ajustar la altura inicialmente y en caso de redimensionamiento de la ventana
+  window.addEventListener('DOMContentLoaded', adjustIframeHeight);
+  window.addEventListener('resize', adjustIframeHeight);
