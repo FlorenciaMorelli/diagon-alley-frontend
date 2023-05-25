@@ -287,3 +287,109 @@ label, input, button {
     height: 100%;
     border: 0;
 }
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        gap: 10px;
+    }
+
+    .logo {
+        grid-column: 1 / span 2;
+        justify-content: flex-start;
+    }
+
+    nav {
+        grid-column: 1 / span 2;
+        margin-top: 20px;
+    }
+
+    .bienvenido {
+        grid-template-columns: 1fr;
+    }
+
+    .bienvenidoTexto,
+    .bienvenidoImagen {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .carrusel-boton {
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+
+    .carrusel-contenedor {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 0 0 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    h6 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .menu {
+        font-size: 22px;
+    }
+
+    .search-container {
+        width: 80%;
+    }
+
+    #search-input {
+        font-size: 14px;
+    }
+
+    .carrusel-boton {
+        font-size: 18px;
+        padding: 3px 8px;
+    }
+
+    .card {
+        padding: 5px;
+    }
+
+    .card img {
+        height: 120px;
+    }
+
+    .card h3 {
+        font-size: 16px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+}
