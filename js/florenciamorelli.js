@@ -39,6 +39,22 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+
+
+// MODIFICACIÓN DEL HEADER AL SCROLLEAR - no funcionó bien
+/* window.addEventListener('scroll', function() {
+    var header = document.getElementById("myHeader");
+    if (window.pageYOffset > 80) {
+      header.classList.add("shrink");
+    } else {
+      header.classList.remove("shrink");
+    }
+  });
+   */
+
+
+
+
 // Iframe de login.html
 // Ajustar la altura del iframe al tamaño del contenido
 function adjustIframeHeight() {
@@ -49,4 +65,3 @@ function adjustIframeHeight() {
   // Ajustar la altura inicialmente y en caso de redimensionamiento de la ventana
   window.addEventListener('DOMContentLoaded', adjustIframeHeight);
   window.addEventListener('resize', adjustIframeHeight);
-  

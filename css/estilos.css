@@ -16,14 +16,22 @@ h1, h2, h3, h4, h5, h6 {
 header {
     background-color: #d3a625;
     position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: height 0.3s ease;
     display: grid;
     grid-template-columns: 1fr 2fr;
     justify-content: center;
     align-items: center;
     padding: 0px 40px;
     gap: 110px;
-
 }
+
+/* Cuando scrolleamos en la página, el header se achica. No funciona muy bien, veremos para el final */
+/* header.shrink {
+  height: 50px;
+} */
+
 
 .logo {
     grid-column: 1;
