@@ -33,11 +33,10 @@
         </nav>
     </header>
     <main>
-        <h1>Próximamente</h1>
         <!-- acá empieza lo que agregué -->
 
         <div id="app">
-            <h1>Productos disponibles con sus precios</h1>
+            <h1>Productos disponibles</h1>
 <!--             <h3>Codo a Codo 2023</h3> -->
             <table>
                <thead>
@@ -46,7 +45,7 @@
                  <th>Descripción</th>
                  <th>Cantidad</th>
                  <th>Precio</th>
-                 <th>Carrito</th>
+                 <th>Agregar al Carrito</th>
               </tr>
                </thead>
                <tbody>
@@ -86,12 +85,9 @@
             </div>
           
             <div v-if="!mostrarCarrito" class="contenedor-centrado">
-               <button @click="obtenerCarrito">Mostrar carrito</button>
+               <button @click="obtenerCarrito" id="mostrarcarrito">Mostrar carrito</button>
             </div>
-          
-            <div class="contenedor-centrado">
-               <a href="index.html">Menu principal</a>
-            </div>
+
           
              </div>
           

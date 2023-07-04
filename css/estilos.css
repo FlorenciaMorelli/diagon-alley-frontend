@@ -270,7 +270,54 @@ label, input, button {
     color: #000010;
 }
 
+.contenedor-centrado {
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+  
+button {
+    padding: 8px;
+    margin:4px;
+    background-color: #D3A625;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: medium;
+}
 
+#mostrarcarrito{
+    font-size: large;
+    margin: 15px;
+    padding: 15px;
+}
+
+table {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+}
+
+td{
+    padding: 5px 25px;
+    text-align: center;
+}
+th{
+    padding: 5px 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+#app{
+    text-align: center;
+}
 /* login.html - IFRAME */
 .iframe-container {
     position: relative;
