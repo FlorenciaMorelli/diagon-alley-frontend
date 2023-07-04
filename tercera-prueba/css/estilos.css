@@ -1,6 +1,6 @@
 /* Estilos para todo el proyecto */
 body {
-        font-family: Arial, sans-serif;
+        font-family: Peddana, Verdana, sans-serif;
         background-color: #f9f9f9;
   }
   
@@ -20,7 +20,7 @@ body {
   
   h1, h2, h3, h4, h5, h6 {
         text-align: center;
-        color: #007bff;
+        color: black;
   }
   
   form {
@@ -58,7 +58,7 @@ body {
   
   input[type="submit"] {
         padding: 10px;
-        background-color: #007bff;
+        background-color: #000000;
         color: #ffffff;
         border: none;
         border-radius: 5px;
@@ -66,13 +66,13 @@ body {
   }
   
   input[type="submit"]:hover {
-        background-color: #0056b3;
+        background-color: #811116;
   }
   
   button {
         padding: 8px;
         margin:4px;
-        background-color: #007bff;
+        background-color: black;
         color: #ffffff;
         border: none;
         border-radius: 5px;
@@ -80,13 +80,13 @@ body {
   }
   
   button:hover {
-        background-color: #0056b3;
+        background-color: #811116;
   }
   
   a {
         padding: 8px;
         margin:4px;
-        background-color: #fdab13;
+        background-color: #D3A625;
         color: #ffffff;
         border: none;
         border-radius: 5px;
