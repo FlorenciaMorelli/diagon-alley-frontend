@@ -33,12 +33,6 @@ header {
     gap: 110px;
 }
 
-/* Cuando scrolleamos en la página, el header se achica. No funciona muy bien, veremos para el final */
-/* header.shrink {
-  height: 50px;
-} */
-
-
 .logo {
     grid-column: 1;
     display: flex;
@@ -103,10 +97,32 @@ p {
     line-height: 1.5;
 }
 
-footer {
-    margin: 0 20px;
+a{
+    color: #000010;
+    text-decoration: none;
 }
 
+a:hover{
+    text-shadow: 4px 4px 8px #0E0E35;
+}
+
+/* Estilos footer */
+footer {
+    background-color: rgba(211, 166, 37, 0.35);
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 3;
+    position: sticky;
+}
+
+.footer-izq{
+    grid-column: 1;
+}
+
+.footer-der{
+    grid-column: 3;
+    justify-self: end;
+}
 
 
 /* Carrusel */
